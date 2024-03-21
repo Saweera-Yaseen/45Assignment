@@ -1,27 +1,39 @@
-//Question#12 Greetings: Start with the array you used in Exercise 11, but instead of just printing each person’s name, print a message to them. The text of each message should be the same, but each message should be personalized with the person’s name.
-var fvrtfrnd = ["Faiza, Rafia, Hina"];
-for (var _i = 0, fvrtfrnd_1 = fvrtfrnd; _i < fvrtfrnd_1.length; _i++) {
-    var frnds = fvrtfrnd_1[_i];
-    console.log("Dear", frnds, "Thank you for joining us today");
+//Question#15 Changing Guest List: You just heard that one of your guests can’t make the dinner, so you need to send out a new set of invitations. You’ll have to think of someone else to invite.
+//Question 16 More Guests: You just found a bigger dinner table, so now more space is available. Think of three more guests to invite them on dinner.
+// Start with your program from Exercise 15. Add a print statement to the end of your program informing people that you found a bigger dinner table.
+// Add one new guest to the beginning of your array.
+//Add one new guest to the middle of your array. • Use append() to add one new guest to the end of your list. • Print a new set of invitation messages, one for each person in your list.
+//Initial guest list
+var guest_list = ["Sufyan"];
+// Function to print invitation messages
+var guests = ["Sufyan"];
+for (var guest in guests) {
+    console.log("Dear {guest},\nYou are cordially invited to dinner at my place on Saturday night. Please RSVP.");
 }
-;
-//Question#13 Your Own Array: Think of your favorite mode of transportation, such as a motorcycle or a car, and make a list that stores several examples. Use your list to print a series of statements about these items, such as “I would like to own a Honda motorcycle.”
-var transportation = ["Tesla Model S", "Honda CBR1000RR"];
-for (var _a = 0, transportation_1 = transportation; _a < transportation_1.length; _a++) {
-    var message = transportation_1[_a];
-    console.log("vehicle", message, "I would like to own a Honda motorcycle.");
+// Start with your program from Exercise 14. Add a print statement at the end of your program stating the name of the guest who can’t make it.
+var dontCome = guests[0];
+console.log(dontCome, "can not make it");
+// Modify your list, replacing the name of the guest who can’t make it with the name of the new person you are inviting.
+guest_list.splice(0, 1, "Sufyan Yaseen");
+// Print a second set of invitation messages, one for each person who is still in your list.
+var gusts = ["Esha, Ayesha,Fatima"];
+for (var _i = 0, gusts_1 = gusts; _i < gusts_1.length; _i++) {
+    var guests_1 = gusts_1[_i];
+    console.log("Dear", guests_1, "You are invited to dinner");
 }
-;
-//Question#14 Guest List: If you could invite anyone, living or deceased, to dinner, who would you invite? Make a list that includes at least three people you’d like to invite to dinner. Then use your list to print a message to each person, inviting them to dinner.
-var guests = ["Ashfaq, Erum,Faiza"];
-for (var _b = 0, guests_1 = guests; _b < guests_1.length; _b++) {
-    var guest = guests_1[_b];
-    ;
-}
-{
-    console.log("Dear", guests, "I would like to invite you at dinner");
-}
-//Question#16 Start with your program from Exercise 14. Add a print statement at the end of your program stating the name of the guest who can’t make it.
-var unavailableguest = "Ashfaq";
-var msgF = "Unfortunatily {Ashfaq}!, can't makr it!";
-console.log(msgF, (unavailableguest = unavailableguest));
+console.log("Dear", guests, "I have found a bigger dinner table");
+//Adding new value at beginning
+gusts.unshift("Shahnawaz");
+console.log(gusts);
+//Get a middle index 
+var middleIndex = Math.floor(gusts.length / 2);
+console.log(gusts);
+//Adding value at ending
+gusts.push("Zain");
+console.log(gusts);
+//Adding a new guest to middle index array
+gusts.splice(middleIndex, 0, "Aqsa");
+//Print message to updated list
+console.log("Updated list of our Gusts");
+//seeking invitation one by one
+gusts.forEach(function (oneguest) { return console.log("Hello ".concat(oneguest, ", would you like to come dinner with me")); });
