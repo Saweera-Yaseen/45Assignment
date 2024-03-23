@@ -1,49 +1,35 @@
-//Queston#17 Shrinking Guest List: You just found out that your new dinner table won’t arrive in time for the dinner, and you have space for only two guests.
+// Question#18 Seeing the World: Think of at least five places in the world you’d like to visit.
 
-// Start with your program from Exercise 16. Add a new line that prints a message saying that you can invite only two people for dinner.
+//Store the locations in a array. Make sure the array is not in alphabetical order.
 
-let gusts=["Esha", "Ayesha" , "Fatima"]
+let countriesToVisit: string [] = ["Turkey", "China", "USA", "Saudi Arabia"];
+console.log("Orignal Order", countriesToVisit);
 
-//Print a message to each of the two people still on your list, letting them know they’re still invited.
+// Print your array in alphabetical order without modifying the actual list.
 
-console.log("Dear",gusts, "I have found a bigger dinner table")
+console.log("Alphabetical Order", [...countriesToVisit].sort());
 
-//Adding new value at beginning
-gusts.unshift("Shahnawaz")
-console.log(gusts)
+//Show that your array is still in its original order by printing it.
 
-//Get a middle index 
-let middleIndex:number=Math.floor(gusts.length / 2)
-console.log(gusts)
+console.log("Still in OrignalOrder:", countriesToVisit);
 
-//Adding value at ending
-gusts.push("Zain")
-console.log(gusts)
+//Print your array in reverse alphabetical order without changing the order of the original list.
 
-//Adding a new guest to middle index array
-gusts.splice(middleIndex, 0, "Aqsa")
+console.log("Reverse Order:", [...countriesToVisit].reverse());
 
-//Print message to updated list
-console.log("Updated list of our Gusts");
+// Show that your array is still in its original order by printing it again.
 
-//seeking invitation one by one
-gusts.forEach(oneguest => console.log(`Hello ${oneguest}, would you like to come dinner with me`));
+console.log("Still in Orignal Order:", countriesToVisit);
 
-//Inform that only 2 guests is invited
-console.log("Unfortunatily, the new dinner table wont arrive on time, so I can only inviteteo guests dinner with me");
+//Reverse the order of your list. Print the array to show that its order has changed.
 
-//Remove guests from your list one at a time until only two names remain in your list. Each time you pop a name from your list, print a message to that person letting them know you’re sorry you can’t invite them to dinner.
-while(gusts.length > 2){
-    let removegusts=gusts.pop()
-console.log(`Sorry, ${removegusts} I can not invite you at dinner`);
-}
-// Printing invitations to last two gustes
-console.log("Invitaton to the the last teo gusts");
-gusts.forEach(lasttwo => console.log(`Luckely ${lasttwo}, you are invited to dinner`));
+console.log("Orignal Array Reversed:", countriesToVisit.reverse());
 
-//Remove the last two names from your list, so you have an empty list. Print your list to make sure you actually have an empty list at the end of your program.
+//Sort your array so it’s stored in alphabetical order. Print the array to show that its order has been changed.
 
-gusts.pop();
-gusts.pop();
+console.log("Back to Orignal Order :", countriesToVisit.reverse());
 
-console.log("Empty list", gusts);
+//Sort to change your array so it’s stored in reverse alphabetical order. Print the list to show that its order has changed.
+
+console.log("Sorted in Alphabetical Order:", countriesToVisit.sort);
+

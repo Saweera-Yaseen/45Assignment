@@ -1,31 +1,27 @@
-//Queston#17 
-var gusts = ["Esha", "Ayesha","Fatima"];
-console.log("Dear", gusts, "I have found a bigger dinner table");
-//Adding new value at beginning
-gusts.unshift("Shahnawaz");
-console.log(gusts);
-//Get a middle index 
-var middleIndex = Math.floor(gusts.length / 2);
-console.log(gusts);
-//Adding value at ending
-gusts.push("Zain");
-console.log(gusts);
-//Adding a new guest to middle index array
-gusts.splice(middleIndex, 0, "Aqsa");
-//Print message to updated list
-console.log("Updated list of our Gusts");
-//seeking invitation one by one
-gusts.forEach(function (oneguest) { return console.log("Hello ".concat(oneguest, ", would you like to come dinner with me")); });
-//Inform that only 2 guests is invited
-console.log("Unfortunatily, the new dinner table wont arrive on time, so I can only inviteteo guests dinner with me");
-//Using while_loop to remove guests from array
-while (gusts.length > 2) {
-    var removegusts = gusts.pop();
-    console.log("Sorry, ".concat(removegusts, " I can not invite you at dinner"));
-}
-// Printing invitations to last two gustes
-console.log("Invitaton to the the last teo gusts");
-gusts.forEach(function (lasttwo) { return console.log("Luckely ".concat(lasttwo, ", you are invited to dinner")); });
-gusts.pop();
-gusts.pop();
-console.log("Empty list", gusts);
+// Question#18 Seeing the World: Think of at least five places in the world you’d like to visit.
+var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
+    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
+        if (ar || !(i in from)) {
+            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
+            ar[i] = from[i];
+        }
+    }
+    return to.concat(ar || Array.prototype.slice.call(from));
+};
+//Store the locations in a array. Make sure the array is not in alphabetical order.
+var countriesToVisit = ["Turkey", "China", "USA", "Saudi Arabia"];
+console.log("Orignal Order", countriesToVisit);
+// Print your array in alphabetical order without modifying the actual list.
+console.log("Alphabetical Order", __spreadArray([], countriesToVisit, true).sort());
+//Show that your array is still in its original order by printing it.
+console.log("Still in OrignalOrder:", countriesToVisit);
+//Print your array in reverse alphabetical order without changing the order of the original list.
+console.log("Reverse Order:", __spreadArray([], countriesToVisit, true).reverse());
+// Show that your array is still in its original order by printing it again.
+console.log("Still in Orignal Order:", countriesToVisit);
+//Reverse the order of your list. Print the array to show that its order has changed.
+console.log("Orignal Array Reversed:", countriesToVisit.reverse());
+//Sort your array so it’s stored in alphabetical order. Print the array to show that its order has been changed.
+console.log("Back to Orignal Order :", countriesToVisit.reverse());
+//Sort to change your array so it’s stored in reverse alphabetical order. Print the list to show that its order has changed.
+console.log("Sorted in Alphabetical Order:", countriesToVisit.sort);
