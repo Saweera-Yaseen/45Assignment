@@ -1,5 +1,5 @@
 //Queston#17 
-var gusts = ["Esha, Ayesha,Fatima"];
+var gusts = ["Esha", "Ayesha","Fatima"];
 console.log("Dear", gusts, "I have found a bigger dinner table");
 //Adding new value at beginning
 gusts.unshift("Shahnawaz");
