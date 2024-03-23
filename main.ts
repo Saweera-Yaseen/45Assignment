@@ -2,7 +2,7 @@
 
 // Start with your program from Exercise 16. Add a new line that prints a message saying that you can invite only two people for dinner.
 
-let gusts=["Esha, Ayesha,Fatima"]
+let gusts=["Esha", "Ayesha" , "Fatima"]
 
 //Print a message to each of the two people still on your list, letting them know they’re still invited.
 
