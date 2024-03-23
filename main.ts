@@ -1,11 +1,12 @@
-//Question#19 Dinner Guests: Working with one of the programs from Exercises 14 through 18, print a message indicating the number of people you are inviting to dinner.
-
-let guests=["Ashfaq", "Erum","Faiza"];
-//for (let guest of guests);
-//{console.log("Dear" ,guests,"I would like to invite you at dinner")}
-
-let lengthGuests:number = guests.length;
-
-console.log(`We are Inviting total ${lengthGuests} guests.`);
+// Question#20 Think of something you could store in a array. For example, you could make a list of mountains, rivers, countries, cities, languages, or anything else you’d like. Write a program that creates a list containing these items.
 
 
+//Making a programing Language
+
+let programingLanguage: string[] = ["Typescript","Javascript","Python","PHP"];
+
+//Print the message f list
+console.log("List of Programing Language:");
+
+//Print the values of array
+programingLanguage.forEach(language => console.log(language));
