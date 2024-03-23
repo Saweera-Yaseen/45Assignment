@@ -1,12 +1,15 @@
-// Question#20 Think of something you could store in a array. For example, you could make a list of mountains, rivers, countries, cities, languages, or anything else you’d like. Write a program that creates a list containing these items.
+//Question#21 They think of something you could store in a TypeScript Object. Write a program that creates Objects containing these items.
 
+interface itCourse {
+    courseName: string;
+    location: string;
+    onSiteStudent:number;
+}
 
-//Making a programing Language
+let itCourse = {
+    courseName : "Typescript and Javascript",
+    location : "Governor House Sindh",
+    onSiteStudents : 50000
+};
 
-let programingLanguage: string[] = ["Typescript","Javascript","Python","PHP"];
-
-//Print the message f list
-console.log("List of Programing Language:");
-
-//Print the values of array
-programingLanguage.forEach(language => console.log(language));
+console.log(itCourse);
