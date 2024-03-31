@@ -1,34 +1,26 @@
-// Question# 25 Alien Colors #1: Imagine an alien was just shot down in a game. Create a variable called alien_color and assign it a value of 'green', 'yellow', or 'red'.
-// Define Variable
-var AlienColour = "Blue";
-// Write an if statement to test whether the alien’s color is green. If it is, print a message that the player just earned 5 points.
-if (AlienColour === "Green") {
-    // Code 
-    console.log("Alien Color is Green Player just earned five points");
+//Question # 27 Alien Colors #3: Turn your if-else chain from Exercise 5-4 into an if-else chain.
+// Define variable
+var alienclor = "green";
+//If the alien is green, print a message that the player earned 5 points.
+if (alienclor === "green") {
+    console.log("you shot down green alien you have earned 5 points.");
 }
-;
-//Write one version of this program that passes the if test and another that fails. (The version that fails will have no output.)
-if (AlienColour === "Blue") {
-    console.log("Alien Color is Blue");
+//If the alien is yellow, print a message that the player earned 10 points.
+else if (alienclor === "yellow") {
+    console.log("you shot down yellow alien you have earned 10 points");
 }
-;
-// Question # 26 Alien Colors #2: Choose a color for an alien as you did in Exercise 25, and write an if-else chain.
-//Define Variable
-var aliencolor = "green";
-// If the alien’s color is green, print a statement that the player just earned 5 points for shooting the alien.
-if (aliencolor === "green") {
-    console.log("the player just earned 5 points for shooting the alien.");
+//If the alien is red, print a message that the player earned 15 points.
+else if (alienclor === "red") {
+    console.log("you shot down you have 15 points");
 }
-;
-//If the alien’s color isn’t green, print a statement that the player just earned 10 points.
-if (aliencolor === "white") {
-    console.log("the player just earned 10 points.");
+//Write three versions of this program, making sure each message is printed for the appropriate color alien.
+var alienclor2 = "yellow";
+if (alienclor2 === "green") {
+    console.log("you shot down green alien you have earned 5 points");
 }
-// Write one version of this program that runs the if block and another that runs the else block.
-if (aliencolor === "green") {
-    console.log("My color is blue");
+else if (alienclor2 === "yellow") {
+    console.log("you shot down yellow alien you have earned 10 points");
 }
-;
-if (aliencolor === "black") {
-    console.log("I am back from IF satement");
+else if (alienclor2 === "red") {
+    console.log("you shot down red alien you have earned 15 points");
 }
