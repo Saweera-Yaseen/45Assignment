@@ -1,15 +1,10 @@
-//Question#21 They think of something you could store in a TypeScript Object. Write a program that creates Objects containing these items.
+// Question#22 Intentional Error: If you haven’t received an array index error in one of your programs yet, try to make one happen. Change an index in one of your programs to produce an index error. Make sure you correct the error before closing the program.
 
-interface itCourse {
-    courseName: string;
-    location: string;
-    onSiteStudent:number;
-}
+// Creating Array
+let errorArray: string[] = ["A","B","C","D"];
 
-let itCourse = {
-    courseName : "Typescript and Javascript",
-    location : "Governor House Sindh",
-    onSiteStudents : 50000
-};
+//Producing error assecing invalid index of array
+console.log(errorArray[10]);
 
-console.log(itCourse);
+//Error Removed
+console.log(errorArray[1])

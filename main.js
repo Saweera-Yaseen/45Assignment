@@ -1,7 +1,6 @@
-//Question#21
-var itCourse = {
-    courseName: "Typescript and Javascript",
-    location: "Governor House Sindh",
-    onSiteStudents: 50000
-};
-console.log(itCourse);
+// Question#22 
+// Creating Array
+var errorArray = ["A", "B", "C", "D"];
+//Producing error assecing invalid index of array
+console.log(errorArray[10]);
+console.log(errorArray[1]);
