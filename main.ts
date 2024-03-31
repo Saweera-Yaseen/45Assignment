@@ -1,52 +1,83 @@
-//Question# 23 Conditional Tests: Write a series of conditional tests. Print a statement describing each test and your prediction for the results of each test. Your code should look something like this:
+// Question# 24 More Conditional Tests: You don’t have to limit the number of tests you create to 10. If you want to try more comparisons, write more tests. Have at least one True and one False result for each of the following:
 
-// Look closely at your results, and make sure you understand why each line evaluates to True or False.
+// Define variable
+//let apple = "Apple";
+//let uppercaseApple = "APPLE";
 
-// Create at least 10 tests. Have at least 5 tests evaluate to True and another 5 tests evaluate to Fals.
+// Tests for equality and inequality with strings.
+//console.log("Is apple is equal to apple?");
+//console.log(apple == "apple");
 
-// Making a Variable
-let five = 5;
+//console.log("\Is apple is not equal to apple?");
+//console.log(apple != "apple");
 
-let ten = 10;
+//Define variable
+let karachi = "karachi";
+let uppercaseKarachi = "KARACHI";
+let Colours = ["RED", "Blue", "Green"];
 
-// test 1
-console.log("Test 1: Five is equal to 5?");
-console.log(five == 5);
+// Tests using the lower case function
+console.log("is KARACHI is equal to karachi after converting to lowercase? ");
+console.log(uppercaseKarachi.toLocaleLowerCase() == "karachi");
 
-// Test 2
-console.log("\nTest 2: is equal to 10?");
-console.log(ten == 10);
+console.log("\n Is KARACHI is not equal to karachi after converting to lowercase?");
+console.log(uppercaseKarachi.toLocaleLowerCase() != "karachi");
 
-// Test 3
-console.log("\nTest 3: 5 is not equal to 10 ");
-console.log(five != ten);
+//Numerical tests involving equality and inequality, greater than and less than, greater than or equal to, and less than or equal to
 
-// Test 4
-console.log("\Test 4: 10 is greater than 5");
-console.log(ten > 5);
+//define variabl
+let twenty =20
+let ten = 10
+let zero = 0
 
-//Test 5
-console.log("\ Test 5: 5 is smaller than 10");
-console.log( five < ten);
+//Equal to
+console.log("\Is ten is equal twenty?");
+console.log(ten == twenty)
 
-// Test 6
-console.log("\nTest 6: 10 is smaller than 5");
-console.log(ten <5);
+// Not Equal to
+console.log("\nIs ten is not equal t twenty?");
+console.log(ten != twenty);
 
-//Test 7
-console.log("\nTest 7: 5 is equal to 10");
-console.log(five == ten);
+// Greater than
+console.log("\nIs ten is grater then zero?");
+console.log(ten > zero);
 
-// Test 8 
-console.log("\nTest 8: 5 is grater than 10");
-console.log(five > 10);
+// less than
+console.log("\nIs twenty is less than 10?");
+console.log(twenty < 10);
 
-// Test 9
-console.log("\Test 9: 10 is equal t 5");
-console.log(ten == 5);
+//Greater than or equal to
+console.log("\nIs ten is greater than or equal to 5?");
+console.log(ten >= 5);
 
-// Test 10
-console.log("\n Test 10: 5 is  equal t 10");
-console.log(five == 10);
+//Less than or Equal to
+console.log("\nTwenty is less than or equalto 10")
+console.log(twenty <= 10);
+
+// Tests using "and" & 0
+
+//using && (and)
+console.log("\n Twenty is not equal to 10 and twenty is greater than 10");
+console.log(twenty != 10 && twenty > 10);
+
+//using []  (OR)
+console.log("\n 20 is greater than 50 or 20 is equal t 20?");
+console.log(20 > 50 , 20 == 20)
+
+console.log("\n 20 is less than 50 or 20 is equal t 20?");
+console.log(20 < 50 , 20 != 20)
+
+// Test weather an item is include in array 
+console.log("\nIs Red include in my colours array?");
+console.log(Colours.includes("RED"));
+
+//Not Include
+console.log("\nIs Red not include in my colours array?");
+console.log(!Colours.includes("RED"));
+
+
+
+
+
 
 
