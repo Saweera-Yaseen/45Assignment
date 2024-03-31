@@ -1,83 +1,42 @@
-// Question# 24 More Conditional Tests: You don’t have to limit the number of tests you create to 10. If you want to try more comparisons, write more tests. Have at least one True and one False result for each of the following:
+// Question# 25 Alien Colors #1: Imagine an alien was just shot down in a game. Create a variable called alien_color and assign it a value of 'green', 'yellow', or 'red'.
 
-// Define variable
-//let apple = "Apple";
-//let uppercaseApple = "APPLE";
+// Define Variable
+let AlienColour = "Blue";
 
-// Tests for equality and inequality with strings.
-//console.log("Is apple is equal to apple?");
-//console.log(apple == "apple");
+// Write an if statement to test whether the alien’s color is green. If it is, print a message that the player just earned 5 points.
 
-//console.log("\Is apple is not equal to apple?");
-//console.log(apple != "apple");
+if (AlienColour=== "Green"){
+    // Code 
+    console.log("Alien Color is Green Player just earned five points");
+};
 
-//Define variable
-let karachi = "karachi";
-let uppercaseKarachi = "KARACHI";
-let Colours = ["RED", "Blue", "Green"];
+//Write one version of this program that passes the if test and another that fails. (The version that fails will have no output.)
 
-// Tests using the lower case function
-console.log("is KARACHI is equal to karachi after converting to lowercase? ");
-console.log(uppercaseKarachi.toLocaleLowerCase() == "karachi");
+if (AlienColour === "Blue"){
+    console.log("Alien Color is Blue")
+};
 
-console.log("\n Is KARACHI is not equal to karachi after converting to lowercase?");
-console.log(uppercaseKarachi.toLocaleLowerCase() != "karachi");
+// Question # 26 Alien Colors #2: Choose a color for an alien as you did in Exercise 25, and write an if-else chain.
 
-//Numerical tests involving equality and inequality, greater than and less than, greater than or equal to, and less than or equal to
+//Define Variable
+let aliencolor = "green";
 
-//define variabl
-let twenty =20
-let ten = 10
-let zero = 0
+// If the alien’s color is green, print a statement that the player just earned 5 points for shooting the alien.
 
-//Equal to
-console.log("\Is ten is equal twenty?");
-console.log(ten == twenty)
+if (aliencolor === "green"){
+    console.log("the player just earned 5 points for shooting the alien." )
+};
 
-// Not Equal to
-console.log("\nIs ten is not equal t twenty?");
-console.log(ten != twenty);
+//If the alien’s color isn’t green, print a statement that the player just earned 10 points.
+if (aliencolor === "white"){
+    console.log("the player just earned 10 points.")
+}
 
-// Greater than
-console.log("\nIs ten is grater then zero?");
-console.log(ten > zero);
+// Write one version of this program that runs the if block and another that runs the else block.
 
-// less than
-console.log("\nIs twenty is less than 10?");
-console.log(twenty < 10);
-
-//Greater than or equal to
-console.log("\nIs ten is greater than or equal to 5?");
-console.log(ten >= 5);
-
-//Less than or Equal to
-console.log("\nTwenty is less than or equalto 10")
-console.log(twenty <= 10);
-
-// Tests using "and" & 0
-
-//using && (and)
-console.log("\n Twenty is not equal to 10 and twenty is greater than 10");
-console.log(twenty != 10 && twenty > 10);
-
-//using []  (OR)
-console.log("\n 20 is greater than 50 or 20 is equal t 20?");
-console.log(20 > 50 , 20 == 20)
-
-console.log("\n 20 is less than 50 or 20 is equal t 20?");
-console.log(20 < 50 , 20 != 20)
-
-// Test weather an item is include in array 
-console.log("\nIs Red include in my colours array?");
-console.log(Colours.includes("RED"));
-
-//Not Include
-console.log("\nIs Red not include in my colours array?");
-console.log(!Colours.includes("RED"));
-
-
-
-
-
-
-
+if (aliencolor === "green"){
+    console.log("My color is blue")
+};
+if (aliencolor === "black"){
+    console.log("I am back from IF satement")
+}
