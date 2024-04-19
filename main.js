@@ -1,26 +1,13 @@
-//Question # 27 Alien Colors #3: Turn your if-else chain from Exercise 5-4 into an if-else chain.
-// Define variable
-var alienclor = "green";
-//If the alien is green, print a message that the player earned 5 points.
-if (alienclor === "green") {
-    console.log("you shot down green alien you have earned 5 points.");
-}
-//If the alien is yellow, print a message that the player earned 10 points.
-else if (alienclor === "yellow") {
-    console.log("you shot down yellow alien you have earned 10 points");
-}
-//If the alien is red, print a message that the player earned 15 points.
-else if (alienclor === "red") {
-    console.log("you shot down you have 15 points");
-}
-//Write three versions of this program, making sure each message is printed for the appropriate color alien.
-var alienclor2 = "yellow";
-if (alienclor2 === "green") {
-    console.log("you shot down green alien you have earned 5 points");
-}
-else if (alienclor2 === "yellow") {
-    console.log("you shot down yellow alien you have earned 10 points");
-}
-else if (alienclor2 === "red") {
-    console.log("you shot down red alien you have earned 15 points");
-}
+// Question # 30 Hello Admin: Make a array of five or more usernames, including the name 'admin'. Imagine you are writing code that will print a greeting to each user after they log in to a website. Loop through the array, and print a greeting to each user:
+//If the username is 'admin', print a special greeting, such as Hello admin, would you like to see a status report?
+// Otherwise, print a generic greeting, such as Hello Eric, thank you for logging in again.
+var userNames = ["Hassan", "Ahtisham", "Sufyan", "Admin", "Zeeshan"];
+// Using forEach Loop on Array
+userNames.forEach(function (oneUser) {
+    if (oneUser === "Admin") {
+        console.log("Hello ".concat(oneUser, ", would you like to see a status report?"));
+    }
+    else {
+        console.log("Hello ".concat(oneUser, ", thank you for logging in again.\n        "));
+    }
+});
