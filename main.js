@@ -1,13 +1,12 @@
-// Question # 30 Hello Admin: Make a array of five or more usernames, including the name 'admin'. Imagine you are writing code that will print a greeting to each user after they log in to a website. Loop through the array, and print a greeting to each user:
-//If the username is 'admin', print a special greeting, such as Hello admin, would you like to see a status report?
-// Otherwise, print a generic greeting, such as Hello Eric, thank you for logging in again.
-var userNames = ["Hassan", "Ahtisham", "Sufyan", "Admin", "Zeeshan"];
-// Using forEach Loop on Array
-userNames.forEach(function (oneUser) {
-    if (oneUser === "Admin") {
-        console.log("Hello ".concat(oneUser, ", would you like to see a status report?"));
-    }
-    else {
-        console.log("Hello ".concat(oneUser, ", thank you for logging in again.\n        "));
-    }
-});
+"use strict";
+// Question 37 Large Shirts: Modify the make_shirt() function so that shirts are large by default with a message that reads I love TypeScript. Make a large shirt and a medium shirt with the default message, and a shirt of any size with a different message.
+// Making a function
+function make_shirt(size = "Large", printMessage = "I Love Typescript") {
+    console.log(`Creationg ${size} shirt with the ${printMessage} prints on shirt.`);
+}
+// Calling a function by defult
+make_shirt();
+// Calling a function now with Medium size defult message
+make_shirt("Medium");
+// Calling a function now with small size and also different print message
+make_shirt("Small", "I Love JavaScript");
