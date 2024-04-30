@@ -1,37 +1,25 @@
-// Question 38 Cities: Write a function called describe_city() that accepts the name of a city and its country. The function should print a simple sentence, such as Karachi is in Pakistan. Give the parameter for the country a default value.
+//Question # 40 Album: Write a function called make_album() that builds a Object describing a music album. The function should take in an artist name and an album title, and it should return a Object containing these two pieces of information. Use the function to make three dictionaries representing different albums. Print each return value to show that Objects are storing the album information correctly. Add an optional parameter to make_album() that allows you to store the number of tracks on an album. If the calling line includes a value for the number of tracks, add that value to the album’s Object. Make at least one new function call that includes the number of tracks on an album.
 
-//Call your function for three different cities, at least one of which is not in the default country.
+function make_album(artist_name: string, album_title: string, tracks?: number){
+    let album: {artist: string, title: string, tracks?: number} = {
+        artist: artist_name,
+        title: album_title,
 
-function describe_city (city: string, country: string = "Pakistan"){
+    };
+    if (tracks !== undefined){
+        album.tracks = tracks;
+    }
 
-    console.log(`${city} is in ${country}`);
-
-}
-
-//calling the function
-describe_city ("Karachi");
-
-describe_city ("Lahore")
-
-describe_city ("Berlin", "Germany");
-
-// Question # 39 City Names: Write a function called city_country() that takes in the name of a city and its country. The function should return a string formatted like this:
-
-//"Lahore, Pakistan"
-
-//Call your function with at least three city-country pairs, and print the value that’s returned.
-
-function city_country(city: string, country: string) : string{
-
-    return `${city} , ${country}`;
-
+    return album;
 } 
+//calling function with different values
+let album1 = make_album("Savera", "Album title 1");
 
-// calling a function and print a written value 
-;
+let album2 = make_album("Ali", "Album title 2");
 
-console.log(city_country("Karachi", "Pakistan"));
+let album3 = make_album("Erum", "Album title 3", 10);
 
-console.log(city_country("Tokyo", "Japan"));
-
-console.log(city_country("Berlin", "Germany"));
+// print vcalues of our object created by function 
+console.log(album1);
+console.log(album2);
+console.log(album3);
